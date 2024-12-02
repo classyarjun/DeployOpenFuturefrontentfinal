@@ -34,18 +34,15 @@
 
 /* Footer Section */
 .footer-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2vh 2%;
+
+
   color: white;
-  /* background-color: #000; */
 }
 
 /* Footer Links and Copyright */
 .copyright {
   font-size: 0.8rem;
-  margin-right: 780px;
+text-align: center;
 }
 
 .footer-links {
@@ -75,13 +72,7 @@
 }
 
 /* Footer Container */
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 /* Logo Section */
 .logo-section img {
@@ -125,26 +116,13 @@ li a:hover {
   color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  /* Adjust footer-container for medium-sized screens */
-  .footer-container {
-      grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
-  }
 
-  /* Stack logo-section and footer-links vertically */
-  .footer-section {
-      flex-direction: column;
-      align-items: center;
-  }
-}
 
 @media (max-width: 768px) {
   /* Stack items vertically on small screens */
-  .footer-container {
-      grid-template-columns: 1fr; /* Single column layout on small screens */
-      padding: 1vh 0;
-  }
+  /* .footer-container {
+
+  } */
 
   /* Center footer section and copyright */
   .footer-section {
@@ -165,7 +143,7 @@ li a:hover {
 
   /* Reduce font size for copyright */
   .copyright {
-      margin-right: 0;
+
       font-size: 0.75rem;
   }
 
@@ -179,9 +157,6 @@ li a:hover {
 
 @media (max-width: 480px) {
   /* Further adjustments for very small screens */
-  .footer-container {
-      padding: 2vh 1vw;
-  }
 
   .footer-links a {
       font-size: 0.8rem; /* Adjust link size for very small screens */

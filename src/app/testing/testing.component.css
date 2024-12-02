@@ -1,115 +1,75 @@
+
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
+  background: #eee;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.aboutus-sec {
-  background: #1e3a8a; /* Navy blue background */
-  color: white;
-  /* padding: 50px 30px; */
-  position: relative;
-  overflow: hidden;
-}
-
-.aboutus-sec .position-absolute img {
+.swiper {
   width: 100%;
-  opacity: 0.1;
+  padding: 20px 0;
 }
 
-.aboutus-sec h5 {
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 600;
+.swiper-slide {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-.aboutus-sec h1 {
-  font-size: 48px;
-  margin: 10px 0;
+.services-style-five-item .heading {
+  font-size: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
-.aboutus-sec p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 15px;
+.services-style-five-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.aboutus-sec .btn-white {
-  background: white;
-  color: #1e3a8a;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 10px 20px;
-  border: none;
-  transition: all 0.3s ease-in-out;
+.btn-border-secondary {
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  color: #007bff;
+  transition: 0.3s;
 }
 
-.aboutus-sec .btn-white:hover {
-  background: #ff6b35;
-  color: white;
+.btn-border-secondary:hover {
+  background: #007bff;
+  color: #fff;
 }
 
-.block-1 {
-  background: rgba(30, 58, 138, 0.8);
-  border-radius: 10px;
-  padding: 15px;
-  position: absolute;
-  top: 0;
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.block-1 h5 {
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-top: 10px;
-}
-
-.block-1 .timer {
-  font-size: 40px;
-}
-
-.shape-left-top {
-  position: absolute;
-  top: 0;
+.pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 10px;
   left: 0;
-  z-index: -1;
-}
-
-.col-6 img {
   width: 100%;
-  border-radius: 10px;
 }
 
-.btn-certification img {
-  width: 100px;
-  transition: transform 0.3s ease-in-out;
+.swiper-pagination {
+  position: absolute !important;
+  bottom: -20px;
+  /* Adjust this value as needed */
+  left: 0;
+  top: 60% !important;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+
 }
 
-.btn-certification img:hover {
-  transform: scale(1.1);
-}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .aboutus-sec {
-    padding: 30px 15px;
-  }
 
-  .aboutus-sec h1 {
-    font-size: 32px;
-  }
 
-  .aboutus-sec p {
-    font-size: 16px;
-  }
 
-  .btn-certification img {
-    width: 80px;
-  }
-}
+
