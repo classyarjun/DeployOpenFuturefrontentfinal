@@ -1,9 +1,16 @@
 
 body {
-  background: #eee;
+  /* background: #1c029d; */
   font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+.services-area{
+background-image: url("src/assets/bg.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-color: #094d96;
 }
 
 .swiper {
@@ -12,7 +19,7 @@ body {
 }
 
 .swiper-slide {
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -57,7 +64,6 @@ body {
 .swiper-pagination {
   position: absolute !important;
   bottom: -20px;
-  /* Adjust this value as needed */
   left: 0;
   top: 60% !important;
   width: 100%;
@@ -68,8 +74,17 @@ body {
 
 }
 
+/*
+.card:hover .card-title,
+.card:hover .card-description {
+border-radius: 20px;
+color: #fff;
+}
 
-
+.card:hover {
+background-color: #052b55;
+color: #fff;
+} */
 
 
 
