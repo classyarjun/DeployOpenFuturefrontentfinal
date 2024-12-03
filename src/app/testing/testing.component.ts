@@ -8,14 +8,17 @@ SwiperCore.use([Pagination]);
   templateUrl: './testing.component.html',
   styleUrls: ['./testing.component.css'],
 })
-
 export class TestingComponent implements AfterViewInit {
   ngAfterViewInit() {
     const swiper = new SwiperCore('.mySwiper', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        renderBullet: (index, className) => {
+          return '<span class="' + className + '" >' + ("⦿") + '</span>';
+        },
       },
+
       slidesPerView: 1,
       spaceBetween: 20,
       breakpoints: {
@@ -29,3 +32,5 @@ export class TestingComponent implements AfterViewInit {
     });
   }
 }
+
+
