@@ -30,7 +30,7 @@ body, html {
 .left-section {
   width: 50%;
   background: linear-gradient(135deg, #007bff, #5ca4f2);
-  color: #ffffff;
+  color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,37 +46,45 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('src/assets/Login_Register_img/Register.jpg') center/cover no-repeat;
+  background: url('src/assets/Login Registration-updated/Registration.jpg') center/cover no-repeat;
   z-index: 1;
 }
 
 .left-section h2, .left-section p {
   position: relative;
-  z-index: 2;
+  z-index: 3; /* Ensure text stays above everything */
   text-align: center;
+  padding: 10px 20px; /* Add spacing around text */
 }
 
-.left-section::before {
+/* Blur background for h2 and p */
+.left-section h2::before, .left-section p::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Overlay for better text visibility */
-  z-index: 1;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  backdrop-filter: blur(5px); /* Blur effect */
+  border-radius: 10px; /* Optional rounded corners */
+  z-index: -1; /* Place behind the text */
 }
 
+/* Specific styles for h2 */
 .left-section h2 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
+/* Specific styles for p */
 .left-section p {
   font-size: 16px;
   margin-bottom: 20px;
 }
+
+
 
 .right-section {
   width: 50%;
