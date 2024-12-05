@@ -14,7 +14,7 @@ body {
 .header-container {
   position: relative;
   text-align: center;
-  height: 600px;
+  height: 550px;
   overflow: hidden;
 }
 
@@ -25,9 +25,9 @@ body {
   transition: transform 0.5s ease;
 }
 
-.header-container:hover .header-image {
+/* .header-container:hover .header-image {
   transform: scale(1.1);
-}
+} */
 
 .header-content {
   position: absolute;
