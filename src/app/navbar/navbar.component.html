@@ -363,11 +363,12 @@
     </div>
   </div>
 
-  <!-- Mobile Menu -->
+  <!-- ! ================ //  Mobile Menu // ==================================-->
+
   <div *ngIf="isVisible" class="mainwrapper bg-light">
     <!-- initially hidden -->
     <div class="nav_wrapper bg-light" style="width: 70vw; height: 100%; overflow-y: scroll">
-      <a class="nav-link mb-2 fs-5" href="#">Home</a>
+      <a class=" mb-2 nav-link-mobile " href="#">Home</a>
 
       <!-- Aboutus -->
       <div class="accordion-item mb-2">
@@ -563,7 +564,29 @@
           </div>
         </div>
       </div>
-      <a class="nav-link mb-2 fs-5" href="/careers">Careers</a>
+
+<!-- Career-->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed fs-5 text-dark" type="button"
+      data-bs-toggle="collapse" data-bs-target="#collapseCareers" aria-expanded="false"
+      aria-controls="collapseCareers" style="background: none;">
+      Careers
+    </button>
+  </h2>
+  <div id="collapseCareers" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <div class="menu-container">
+        <a class="dropdown-item py-1" href="/careers"><i class="fas fa-phone-alt"></i> Careers</a>
+      </div>
+      <!-- <a href="/careers" class="text-dark">Careers</a> -->
+    </div>
+  </div>
+</div>
+
+
+  <!-- <a class="nav-link mb-2 fs-5 " href="/careers">Careers</a> -->
+
     </div>
   </div>
 </div>

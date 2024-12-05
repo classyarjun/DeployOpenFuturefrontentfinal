@@ -85,10 +85,10 @@
 }
 
 .mainwrapper {
-  height: 90%;
+  height: 100%;
   position: fixed;
   left: 0;
-  top: 13.8%;
+  /* top: 12%; */
   padding: 1rem;
 }
 
@@ -110,13 +110,6 @@
   color: rgb(255, 255, 255);
 }
 
-.mainwrapper[_ngcontent-ng-c1729997884] {
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 7.8%;
-  padding: 1rem;
-}
 
 .nav-link {
   text-transform: uppercase; /* Makes the text uppercase */
@@ -127,5 +120,12 @@
 .accordion-button{
   font-weight: 500  !important;
   text-transform: uppercase; /* Makes the text uppercase */
-
  }
+
+.nav-link-mobile {
+  text-transform: uppercase; /* Makes the text uppercase */
+  font-size: 20px!important;
+  font-weight: 500!important;
+  margin-left: 17px;
+  text-decoration: none;
+}
